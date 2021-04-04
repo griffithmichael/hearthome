@@ -1,0 +1,44 @@
+2017-12-01
+
+Checkboxes
+
+if(isset($_POST['city']))
+{
+	
+}
+
+
+
+what is bitset does;
+
+case matches:
+
+0 matches - leave message no matches, broaden criteria
+1 match - automatically header to profile match. Message saying here's your 1 match
+1> profile search - results, id image, headline -> display profile when clicked
+
+PROFILES_PER_PAGE = 10 
+
+pg_num_rows($results) = 151
+
+151/10 = 15.1
+
+ceil(15.1/matchesperpage)
+
+15.1 => 16
+
+
+
+
+in buildcheckbox;
+
+$data = pg_fetch_all(pg_query($conn,sql));
+
+$i = 0;
+
+foreach($data as $datum)
+{	
+	$checked = ($datum['value'] & $prechecked) ? 
+	$output .= <input type = checkbox>
+}
+
